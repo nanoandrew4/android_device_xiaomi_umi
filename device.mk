@@ -324,6 +324,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     UmiFrameworks \
     UmiSystemUI \
+    SettingsResUmi \
     UmiTelephony \
     WifiResTarget
 
