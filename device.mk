@@ -4,14 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+# Fingerprint
+TARGET_HAS_UDFPS := true
 
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
-
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)
+# Inherit from sm8250-common
+$(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -229,7 +226,6 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.mdm.sh \
     init.mi.btmac.sh \
-    init.mi.usb.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
@@ -353,7 +349,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Parts
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiUmiParts
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -413,20 +409,10 @@ PRODUCT_PACKAGES += \
     extphonelib-product \
     extphonelib.xml \
     extphonelib_product.xml \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
     qti-telephony-hidl-wrapper-prd \
     qti_telephony_hidl_wrapper_prd.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
     qti-telephony-utils-prd \
-    qti_telephony_utils_prd.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    qti_telephony_utils_prd.xml
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -474,3 +460,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wlan/WCNSS_qcom_cfg_qca6390.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/configs/wlan/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+
+# Get non-open-source specific aspects
+$(call inherit-product, vendor/xiaomi/umi/umi-vendor.mk)

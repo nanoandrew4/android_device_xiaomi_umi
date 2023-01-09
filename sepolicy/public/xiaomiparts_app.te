@@ -1,3 +1,3 @@
-type xiaomiparts_app, domain;
+type xiaomiumiparts_app, domain;
 
-typeattribute xiaomiparts_app mlstrustedsubject;
+typeattribute xiaomiumiparts_app mlstrustedsubject;

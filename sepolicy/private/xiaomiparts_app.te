@@ -1,6 +1,6 @@
-app_domain(xiaomiparts_app)
+app_domain(xiaomiumiparts_app)
 
-allow xiaomiparts_app {
+allow xiaomiumiparts_app {
   activity_service
   activity_task_service
   audio_service
@@ -17,10 +17,10 @@ allow xiaomiparts_app {
   tethering_service
 }:service_manager find;
 
-allow xiaomiparts_app system_app_data_file:dir create_dir_perms;
-allow xiaomiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
+allow xiaomiumiparts_app system_app_data_file:dir create_dir_perms;
+allow xiaomiumiparts_app system_app_data_file:{ file lnk_file } create_file_perms;
 
-allow xiaomiparts_app {
+allow xiaomiumiparts_app {
   cgroup
   sysfs_thermal
 }:{ file lnk_file } rw_file_perms;
