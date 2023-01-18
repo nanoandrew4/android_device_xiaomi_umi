@@ -217,25 +217,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     IFAAService
 
-# Init
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.class_main.sh \
-    init.mdm.sh \
-    init.mi.btmac.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.qti.dcvs.sh \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    init.xiaomi.rc \
-    ueventd.qcom.rc
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
