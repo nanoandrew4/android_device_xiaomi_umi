@@ -3,26 +3,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest version="1.0" type="device">
-    <!-- AudioHAL ext -->
-    <hal format="hidl">
-        <name>vendor.qti.hardware.audiohalext</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAudioHalExt</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <!-- Consumer IR -->
-    <hal format="hidl">
-        <name>android.hardware.ir</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IConsumerIr</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <!-- Fingerprint -->
     <hal format="hidl">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
@@ -39,16 +19,6 @@
         <version>1.0</version>
         <interface>
             <name>IXiaomiFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <!-- Sensors -->
-    <hal format="hidl">
-        <name>android.hardware.sensors</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISensors</name>
             <instance>default</instance>
         </interface>
     </hal>
