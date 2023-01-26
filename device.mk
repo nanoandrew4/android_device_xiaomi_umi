@@ -104,11 +104,12 @@ PRODUCT_PACKAGES += \
     libmm-omxcore
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon_Sys \
     FrameworksResCommon_Sys \
     SystemUIResCommon_Sys \
     TelephonyResCommon_Sys
@@ -117,8 +118,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResUmi \
     SettingsResUmi \
-    SystemUIResUmi \
-    TelephonyResUmi
+    SystemUIResUmi
 
 # Parts
 PRODUCT_PACKAGES += \
