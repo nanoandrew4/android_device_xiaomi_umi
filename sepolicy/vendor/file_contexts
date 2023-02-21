@@ -12,9 +12,6 @@
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
 
-# NFC
-/vendor/bin/hw/android\.hardware\.nfc_snxxx@1\.2-service    u:object_r:hal_nfc_default_exec:s0
-
 # Touch
 /sys/devices/virtual/touch/touch_dev/palm_sensor            u:object_r:vendor_sysfs_tp_virtual_prox:s0
 /sys/devices/virtual/touch/touch_dev/partial_diff_data      u:object_r:sysfs_tp_partial_data:s0
