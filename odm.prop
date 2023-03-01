@@ -1,2 +1,3 @@
 # ODM
 ro.vendor.qti.va_odm.support=1
+ro.boot.product.hardware.sku=nfc
