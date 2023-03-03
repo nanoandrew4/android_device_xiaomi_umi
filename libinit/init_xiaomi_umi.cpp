@@ -11,7 +11,7 @@
 
 static const variant_info_t umi_info = {
     .hwc_value = "",
-    .sku_value = "std",
+    .sku_value = "",
 
     .brand = "Xiaomi",
     .device = "umi",
