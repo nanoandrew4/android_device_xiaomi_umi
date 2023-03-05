@@ -60,10 +60,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Component overrides
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
 # Display
 PRODUCT_PACKAGES += \
     gralloc.kona
@@ -111,7 +107,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
     FrameworksResCommon_Sys \
-    SystemUIResCommon_Sys \
     TelephonyResCommon_Sys
 
 PRODUCT_PACKAGES += \
@@ -119,10 +114,6 @@ PRODUCT_PACKAGES += \
     FrameworksResUmi \
     SettingsResUmi \
     SystemUIResUmi
-
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiUmiParts
 
 # Perf
 PRODUCT_PACKAGES += \
