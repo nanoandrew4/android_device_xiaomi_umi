@@ -17,7 +17,7 @@ static const variant_info_t umi_info = {
     .device = "umi",
     .marketname = "Mi 10",
     .model = "M2001J2G",
-    .build_fingerprint = "Xiaomi/umi/umi:12/SKQ1.211006.001/V13.0.8.0.SJBCNXM:user/release-keys",
+    .build_fingerprint = "Xiaomi/umi/umi:12/SKQ1.211006.001/V13.0.7.0.SJBMIXM:user/release-keys",
 
     .nfc = true,
 };

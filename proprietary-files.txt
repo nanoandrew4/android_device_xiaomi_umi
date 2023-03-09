@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from UMI V13.0.8.0.SJBCNXM
+# All unpinned blobs are extracted from UMI V13.0.7.0.SJBMIXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -437,6 +437,17 @@ vendor/lib64/camera/components/libubifocus.so
 
 # Camera-configs
 vendor/etc/camera/misupermoon/MobNetv2TF_0.35_iter200000_zoom2.5x_h1500w2000.dlc
+vendor/etc/camera/102_SummerDay.png
+vendor/etc/camera/103_Fantasy.png
+vendor/etc/camera/104_Meet.png
+vendor/etc/camera/105_WindSing.png
+vendor/etc/camera/106_Lost.png
+vendor/etc/camera/107_Central.png
+vendor/etc/camera/108_NorthernEurope.png
+vendor/etc/camera/109_Rome.png
+vendor/etc/camera/110_BlackGold.png
+vendor/etc/camera/111_GreenOrange.png
+vendor/etc/camera/112_CyberPunk.png
 vendor/etc/camera/113_BlackIce.png
 vendor/etc/camera/CFR_para_HD_V03.bin
 vendor/etc/camera/CFR_para_T_2x_V03.bin
@@ -698,6 +709,12 @@ vendor/lib64/libwvkeybox.so
 # DRM (Widevine L1)
 vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
+
+# DRM (ClearKey)
+vendor/lib/mediacas/libclearkeycasplugin.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib64/mediacas/libclearkeycasplugin.so
+vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 
 # ESE
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
