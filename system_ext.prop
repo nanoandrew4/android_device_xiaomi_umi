@@ -15,9 +15,6 @@ persist.sys.gps.polaris=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
 
-# NFC
-ro.nfc.port=I2C
-
 # Telephony
 ro.telephony.sim_slots.count=2
 telephony.active_modems.max_count=2

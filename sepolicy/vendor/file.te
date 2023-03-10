@@ -1,9 +1,6 @@
 # f0_value sysfs file
 type sysfs_f0_value, sysfs_type, fs_type;
 
-# Thermal data file
-type vendor_thermal_data_file, file_type, data_file_type;
-
 # Touch sysfs file
 type sysfs_tp_partial_data, fs_type, sysfs_type;
 type vendor_sysfs_tp_virtual_prox, fs_type, sysfs_type;
