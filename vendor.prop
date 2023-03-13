@@ -9,6 +9,7 @@ persist.vendor.qcom.bluetooth.enable.splita2dp=true
 # Camera
 camera.disable_zsl_mode=true
 persist.camera.gyro.disable=0
+persist.vendor.camera.logInfoMask=false
 
 # DPM
 persist.vendor.dpm.feature=1
