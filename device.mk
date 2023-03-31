@@ -5,7 +5,7 @@
 #
 
 # Fingerprint
-TARGET_HAS_UDFPS := true
+# TARGET_HAS_UDFPS := true
 
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
@@ -48,6 +48,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.touchfeature@1.0.vendor
+
+# Biometrics
+PRODUCT_PACKAGES += \
+    libudfpshandler
+
+PRODUCT_PACKAGES += \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
