@@ -1,6 +1,3 @@
-# Devices
-/dev/xiaomi-touch                                           u:object_r:touchfeature_device:s0
-
 # Fingerprint data
 /data/vendor/gf_data(/.*)?                                  u:object_r:fingerprint_vendor_data_file:s0
 /mnt/vendor/persist/fpc(/.*)?                               u:object_r:fingerprint_vendor_data_file:s0

@@ -5,7 +5,7 @@
 #
 
 # Fingerprint
-# TARGET_HAS_UDFPS := true
+TARGET_HAS_UDFPS := true
 
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
@@ -45,16 +45,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml
-
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.touchfeature@1.0.vendor
-
-# Biometrics
-PRODUCT_PACKAGES += \
-    libudfpshandler
-
-PRODUCT_PACKAGES += \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -147,8 +137,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor
 
-PRODUCT_PACKAGES += \
-    sensors.udfps
+# PRODUCT_PACKAGES += \
+    # sensors.udfps
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf

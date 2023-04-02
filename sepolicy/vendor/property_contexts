@@ -3,6 +3,3 @@ ro.hardware.fp.                             u:object_r:vendor_fingerprint_prop:s
 
 # Mlipay
 persist.vendor.sys.pay.ifaa                 u:object_r:vendor_payment_security_prop:s0
-
-# Touchfeature
-ro.vendor.touchfeature.type                 u:object_r:vendor_touchfeature_prop:s0

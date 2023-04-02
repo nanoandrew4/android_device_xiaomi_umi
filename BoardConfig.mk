@@ -6,8 +6,6 @@
 
 DEVICE_PATH := device/xiaomi/umi
 
-TARGET_HAS_UDFPS := true
-
 # Inherit from sm8250-common
 include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
@@ -31,10 +29,6 @@ BUILD_BROKEN_DUP_RULES := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Fingerprint
-TARGET_USES_FOD_ZPOS := true
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
-
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_umi
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_umi
@@ -42,12 +36,10 @@ TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_umi
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/vintf/device_framework_matrix.xml \
-    $(DEVICE_PATH)/vintf/xiaomi_framework_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/vintf/manifest.xml \
-    $(DEVICE_PATH)/vintf/xiaomi_manifest.xml
+    $(DEVICE_PATH)/vintf/manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := umi_defconfig
