@@ -1,5 +1,3 @@
-# Fingerprint
-ro.hardware.fp.                             u:object_r:vendor_fingerprint_prop:s0
+ro.hardware.fp.                             u:object_r:vendor_fingerprint_prop:s0 prefix
 
-# Mlipay
-persist.vendor.sys.pay.ifaa                 u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.ifaa                 u:object_r:vendor_payment_security_prop:s0 exact
