@@ -42,7 +42,7 @@ DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/vintf/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := umi_defconfig
+TARGET_KERNEL_CONFIG := yarpiin_umi_defconfig
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
